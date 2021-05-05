@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+    
+}
+h1 {
+font-family: 'Overpass', sans-serif;
+    color: white;
+    font-size: 72px;
+    line-height: 1;
+    margin-left: 175px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: author 6s steps(200);
+}
+
+@keyframes author {
+    0% {width: 0px;}
+    100% {width: 700px;}
+}
+
+h2 {
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    font-size: 47px;
+    margin-left: 390px;
+    line-height: 1;
+    margin-top: -200px;
+    width: 250px;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+}
+img {
+  display: block;
+
+}
+
+.image1 {
+    margin-left: 325px; 
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.image2 {
+    margin-top: -565px;
+    margin-left: 485px;
+     position: relative;
+    z-index: 2;
+}
+
+.image3 {
+    margin-left: 190px;
+    margin-top: -235px;
+    padding: 50px;
+}
+
+    #container {
+      width: 700px;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      margin-left: 595px;
+    margin-top: -255px;
+    }
+ 
+    .circle {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      opacity: 0;
+        margin-left: -298px;
+        margin-top: -126px;
+    }
+ 
+    .item {
+      z-index: 100;
+      padding: 5px;
+    }
+ 
+    .item img {
+      width: 150px;
+    }
+.circle {
+  border-radius: 50%;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hidden:hover {
+  opacity: 1;
+}
